@@ -3,3 +3,8 @@ load('data.mat');%读取mat文件当中存放的数据
 [max_gap,min_gap]=gap(max_data,min_data,data);%获取每一行与最大值的距离和和最小值的距离和
 disp(max_gap);%打印这两个距离和
 disp(min_gap);
+
+e=information_entropy(data);
+
+fprintf("信息熵为：\n");
+disp(e);
