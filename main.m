@@ -13,7 +13,6 @@ fprintf("\n\n");
 [B]=multiple_regression(Observation_Matrix);
 disp(B);
 fprintf("\n\n\n");
-[p,R2,F]=third(third_mirx);
+[p,R2]=third(third_mirx);
 fprintf("y'=%.8fx+%.8f\n",p(1),p(2));
 fprintf("R2=%.4f\n",R2);
-disp(F);
